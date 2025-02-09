@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600&family=Arsenal&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter Tight", sans-serif;
+    background: #f6f5f7;
+    color: #2D3436;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.content {
+    width: 100%;
+    flex: 1;
+    padding: 0 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #2D3436;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FF6B6B;
+}
+
+/* NAVIGATION */
+.main_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px 25px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 12px 12px;
+}
+
+.main_menu__ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.main_menu__link {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.main_menu__link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #FF6B6B;
+    border-radius: 4px;
+    transition: width 0.3s ease-in-out;
+}
+
+.header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.page_title {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.page_title::after {
+    content: '';
+    display: block;
+    max-width: 1000px;
+    height: 4px;
+    background: #4ECDC4;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.content-box {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 10px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-box:hover {
+    transform: translateY(-3px);
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
+}
+
+.text {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.footer-box {
+    background: #2D3436;
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    border-radius: 12px 12px 0 0;
+    max-height: 100px;
+}
+
+.copyright_text {
+    color: #FFFFFF;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 40px;
+    background: #4ECDC4;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #FF6B6B;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

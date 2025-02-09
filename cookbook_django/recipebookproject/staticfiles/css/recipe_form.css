@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Inter+Tight&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arsenal", serif;
+    background: #f6f5f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.content-box {
+    width: 80%;
+    max-width: 800px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form_block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recipe-form__description,
+.recipe-form__cooking,
+.form_block input {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    font-family: "Arsenal", serif;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-form__description:focus,
+.recipe-form__cooking:focus,
+.form_block input:focus {
+    border-color: #84c983;
+    box-shadow: 0 0 8px rgba(132, 201, 131, 0.3);
+    outline: none;
+}
+
+.recipe-form__description {
+    height: 60px;
+}
+
+.recipe-form__cooking {
+    height: 120px;
+}
+
+input[type="time"] {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    width: 110px;
+    font-family: "Arsenal", serif;
+}
+
+.last_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.item_center {
+    align-items: flex-start;
+}
+
+.buttons_block_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn {
+    font-family: "Arsenal", serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #84c983;
+    border-radius: 15px;
+    padding: 15px 25px;
+    background: #84c983;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.btn:hover {
+    background: #174316;
+    border-color: #174316;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

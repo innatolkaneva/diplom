@@ -1,0 +1,127 @@
+.recipe_common {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+    background: #f9f9f9;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: "Arsenal", serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recipe_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.recipe_left,
+.recipe_right {
+    width: 48%;
+}
+
+.recipe_left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.recipe_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe_image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.recipe_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.recipe_cooking {
+    text-align: justify;
+    font-size: 18px;
+    color: #333;
+}
+
+.recipe_info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.recipe_info span {
+    font-weight: bold;
+    color: #174316;
+}
+
+.recipe_buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+}
+.recipe_btn {
+    cursor: pointer;
+    width: 160px;
+    text-align: center;
+    font-family: "Arsenal", serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #025300;
+    border: 2px solid #025300;
+    border-radius: 40px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background: transparent;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.recipe_btn:hover {
+    color: #fff;
+    background-color: #025300;
+    border-color: #025300;
+}
+
+
+@media (max-width: 768px) {
+    .recipe_container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recipe_left,
+    .recipe_right {
+        width: 100%;
+    }
+
+    .recipe_image img {
+        width: 90%;
+    }
+}
