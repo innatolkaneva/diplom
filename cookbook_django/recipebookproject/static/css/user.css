@@ -238,3 +238,96 @@ button.ghost:hover {
 .icons a:hover {
     color: #84c983;
 }
+@media screen and (max-width: 830px) {
+    .container {
+        width: 90%;
+        min-height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 100%;
+        position: relative;
+        height: auto;
+        transform: none !important;
+    }
+
+    .sign-in-container, 
+    .sign-up-container {
+        position: relative;
+        width: 100%;
+        left: 0;
+        opacity: 1;
+    }
+
+    .sign-up-container {
+        display: none;
+    }
+
+    .container.right-panel-active .sign-up-container {
+        display: block;
+        transform: none;
+    }
+
+    .container.right-panel-active .sign-in-container {
+        display: none;
+        transform: none;
+    }
+
+    .overlay-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+        margin-top: 20px;
+        transform: none !important;
+    }
+
+    .overlay {
+        position: relative;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to right, #006831, #84c983);
+        transform: none !important;
+    }
+
+    .overlay-panel.overlay-right {
+        position: relative;
+        width: 100%;
+        padding: 30px 20px;
+        transform: none !important;
+    }
+
+    .overlay-panel.overlay-left {
+        display: none;
+    }
+    .overlay-panel.overlay-right,
+    .overlay-panel.overlay-left {
+        position: relative;
+        width: 100%;
+        padding: 30px 20px;
+        transform: none !important;
+    }
+
+    .overlay-panel.overlay-left {
+        display: block;
+    }
+
+    .container:not(.right-panel-active) .overlay-panel.overlay-left {
+        display: none;
+    }
+
+    .container:not(.right-panel-active) .overlay-panel.overlay-right {
+        display: block;
+    }
+
+    .container.right-panel-active .overlay-panel.overlay-left {
+        display: block;
+    }
+
+    .container.right-panel-active .overlay-panel.overlay-right {
+        display: none;
+    }
+}
